@@ -94,7 +94,7 @@ let text = "{\n" +
     "}"
 
 var articles = JSON.parse(text)
-fetch('articles.json')
+fetch('https://github.com/mynameis-spec/day/blob/main/articles.json')
 .then(response => response.json())
 .then(data => {
 articles = data;
