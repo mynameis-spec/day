@@ -94,11 +94,6 @@ let text = "{\n" +
     "}"
 
 var articles = JSON.parse(text)
-fetch('https://mynameis-spec.github.io/day/articles.json')
-.then(response => response.json())
-.then(data => {
-articles = data;
-});
 document.addEventListener('DOMContentLoaded', () => {
 /*fetch('articles.json')
   .then(response => response.json())
