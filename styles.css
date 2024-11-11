@@ -1,0 +1,63 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --card-bg: #f8f9fa;
+}
+
+.dark-theme {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --card-bg: #333333;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.card {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+button[name=rd] {
+  font-weight: bold;
+  font-size: 0.9rem;
+  border-radius: 20px;
+  padding: 5px 15px;
+  color: white;
+  background-color: #007bff;
+  min-width: 75px;
+}
+
+button[name=rd]:hover {
+  background-color: #0056b3;
+}
+
+#article-container .card {
+  margin-bottom: 20px;
+}
+
+#most-popular-article {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+header, footer {
+  padding: 15px;
+  font-size: 1.1rem;
+}
+#log-out:hover{
+  color: crimson;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
